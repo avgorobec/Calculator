@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mycustom.css">
+    <title>Title</title>
+</head>
+<body>
+<header class="header">
+
+</header>
+<div id="filials" style="display: none;">
+    <div class="filials-container">
+        <ul class="filials-list">
+            <li><a href="">Рязань</a></li>
+            <li><a href="">Тверь</a></li>
+            <li><a href="">Иваново</a></li>
+            <li><a href="">Владимир</a></li>
+            <li><a href="">Ярославль</a></li>
+            <li><a href="">Тамбов</a></li>
+            <li><a href="">Липецк</a></li>
+            <li><a href="">Тула</a></li>
+            <li><a href="">Вологда</a></li>
+        </ul>
+    </div>
+    <div class="close__panel"></div>
+</div>
+<main>
+    <h4><span style="color: #feb200;">Калькулятор</span></h4>
+    <button id="showPanel">Открыть</button>
+    <p>Для расчета стоимости курс рубля к доллару берется с сайса Центрального Банка России, цены по металлам с текущие
+        на бирже New york</p>
+    <div class="calculator">
+        <div class="ruble-block"><label for="rubl">Курс рубля:</label> <input id="rubl" min="0" step="0.1" type="number"
+                                                                              value=""/></div>
+        <div class="metal-weight"><label for="platinum">Содержимое платины (Platinum) в граммах:</label> <input
+                id="platinum" disabled="disabled" min="0" step="0.1" type="number" value="0"/> <label for="palladium">Содержимое
+            палладия (Palladium) в граммах:</label> <input id="palladium" disabled="disabled" min="0" step="0.1"
+                                                           type="number" value="0"/> <label for="rhodium">Содержимое
+            родия (Rhodium) в граммах:</label> <input id="rhodium" disabled="disabled" min="0" step="0.1" type="number"
+                                                      value="0"/></div>
+        <div class="metal-cost"><label for="platinumCost">Стоимость тройской унциии платины в $:</label> <input
+                id="platinumCost" type="number" value=""/> <label for="palladiumCost">Стоимость тройской унциии палладия
+            в $:</label> <input id="palladiumCost" type="number" value=""/> <label for="rhodiumCost">Стоимость тройской
+            унциии родия в $:</label> <input id="rhodiumCost" type="number" value=""/></div>
+    </div>
+    <div><span class="resultCost">Общая стоимость: </span> <span id="resultCost" class="result-value">0.00 </span><span
+            class="result-value"> руб</span> <a class="calculator-btn" href="#">Связаться с менеджером</a></div>
+</main>
+<script src="mycustom.js"></script>
+</body>
+</html>
